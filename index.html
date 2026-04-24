@@ -530,6 +530,7 @@
         }
 
         .contact-card {
+            min-width: 0;
             padding: 1.8rem;
             border: 1px solid var(--line);
             background: rgba(255, 250, 242, 0.78);
@@ -543,6 +544,7 @@
         }
 
         .contact-link {
+            min-width: 0;
             padding: 1rem 1.1rem;
             border-radius: var(--radius-md);
             background: rgba(24, 33, 29, 0.05);
@@ -565,7 +567,11 @@
         }
 
         .contact-value {
+            display: block;
             font-weight: 700;
+            line-height: 1.35;
+            overflow-wrap: anywhere;
+            word-break: break-word;
         }
 
         .footer {
