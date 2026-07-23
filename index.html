@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srujan Gowda | Software Engineer</title>
+    <title>Srujan Gowda Sathiganahally Jagadeesha | Software Engineer</title>
     <meta
         name="description"
-        content="Portfolio of Srujan Gowda S J, a software engineer building AI products, backend systems, and data-driven applications."
+        content="Playful portfolio of Srujan Gowda Sathiganahally Jagadeesha, a software engineer building AI agents, resilient backend systems, and products with personality."
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500&display=swap"
         rel="stylesheet"
     >
     <style>
         :root {
-            --bg: #f4efe6;
-            --bg-strong: #e6ddcf;
-            --surface: rgba(255, 250, 242, 0.82);
-            --surface-strong: #fffaf2;
-            --ink: #18211d;
-            --muted: #586158;
-            --line: rgba(24, 33, 29, 0.12);
-            --accent: #d95f2f;
-            --accent-2: #0f766e;
-            --accent-3: #f0c27b;
-            --shadow: 0 18px 50px rgba(24, 33, 29, 0.12);
-            --radius-xl: 28px;
-            --radius-lg: 20px;
-            --radius-md: 16px;
-            --max-width: 1180px;
+            --bg: #fff6df;
+            --paper: #fffdf7;
+            --paper-2: #fff0b8;
+            --ink: #20252b;
+            --muted: #57606a;
+            --line: rgba(32, 37, 43, 0.12);
+            --yellow: #ffd44d;
+            --orange: #ff8f3d;
+            --pink: #ff86b7;
+            --green: #7de2a7;
+            --blue: #78b7ff;
+            --shadow: 0 18px 0 rgba(32, 37, 43, 0.08), 0 24px 50px rgba(32, 37, 43, 0.12);
+            --radius-xl: 32px;
+            --radius-lg: 24px;
+            --radius-md: 18px;
+            --max-width: 1240px;
         }
 
         * {
@@ -44,11 +45,12 @@
         }
 
         body {
-            font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+            font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
             background:
-                radial-gradient(circle at top left, rgba(217, 95, 47, 0.14), transparent 30%),
-                radial-gradient(circle at top right, rgba(15, 118, 110, 0.18), transparent 28%),
-                linear-gradient(180deg, #f8f2e8 0%, var(--bg) 55%, #efe6d7 100%);
+                radial-gradient(circle at 15% 15%, rgba(255, 143, 61, 0.28), transparent 18%),
+                radial-gradient(circle at 84% 12%, rgba(120, 183, 255, 0.26), transparent 20%),
+                radial-gradient(circle at 78% 64%, rgba(255, 134, 183, 0.23), transparent 18%),
+                linear-gradient(180deg, #fff8e8 0%, var(--bg) 45%, #fff3cf 100%);
             color: var(--ink);
             min-height: 100vh;
             overflow-x: hidden;
@@ -59,12 +61,12 @@
             position: fixed;
             inset: 0;
             background-image:
-                linear-gradient(rgba(24, 33, 29, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(24, 33, 29, 0.03) 1px, transparent 1px);
-            background-size: 44px 44px;
-            mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), transparent 90%);
+                linear-gradient(rgba(32, 37, 43, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(32, 37, 43, 0.035) 1px, transparent 1px);
+            background-size: 28px 28px;
+            opacity: 0.75;
             pointer-events: none;
-            z-index: -1;
+            z-index: -2;
         }
 
         a {
@@ -73,8 +75,8 @@
         }
 
         img {
-            max-width: 100%;
             display: block;
+            max-width: 100%;
         }
 
         .container {
@@ -82,34 +84,106 @@
             margin: 0 auto;
         }
 
-        .glass {
-            background: var(--surface);
-            backdrop-filter: blur(18px);
-            border: 1px solid rgba(255, 255, 255, 0.55);
+        .card {
+            position: relative;
+            background: rgba(255, 253, 247, 0.88);
+            border: 2px solid rgba(32, 37, 43, 0.08);
+            border-radius: var(--radius-xl);
             box-shadow: var(--shadow);
+            backdrop-filter: blur(12px);
+        }
+
+        .chip,
+        .mini-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            border: 2px solid rgba(32, 37, 43, 0.1);
+            border-radius: 999px;
+            font-family: "IBM Plex Mono", monospace;
+            letter-spacing: 0.02em;
+        }
+
+        .chip {
+            padding: 0.5rem 0.95rem;
+            background: rgba(125, 226, 167, 0.18);
+            font-size: 0.85rem;
+            color: #17623a;
+        }
+
+        .mini-chip {
+            padding: 0.42rem 0.72rem;
+            background: rgba(255, 212, 77, 0.28);
+            font-size: 0.78rem;
+            color: #6f5400;
+        }
+
+        .scribble {
+            position: absolute;
+            padding: 0.55rem 0.9rem;
+            border-radius: 18px;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 2px dashed rgba(32, 37, 43, 0.18);
+            background: rgba(255, 255, 255, 0.66);
+            transform: rotate(-4deg);
+            pointer-events: none;
         }
 
         .site-nav {
             position: sticky;
             top: 0;
             z-index: 30;
-            padding: 1rem 0;
+            padding: 1rem 0 0;
         }
 
-        .nav-inner {
+        .nav-shell {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
+            padding: 0.95rem 1.2rem;
             border-radius: 999px;
-            padding: 0.85rem 1.25rem;
+            background: rgba(255, 253, 247, 0.88);
+            border: 2px solid rgba(32, 37, 43, 0.08);
+            box-shadow: 0 12px 30px rgba(32, 37, 43, 0.08);
+            backdrop-filter: blur(14px);
         }
 
         .brand {
-            font-size: 0.95rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            min-width: 0;
+        }
+
+        .brand-badge {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border-radius: 14px;
+            background: linear-gradient(135deg, var(--orange), var(--pink));
+            color: #fff;
+            font-weight: 800;
+            font-size: 1rem;
+            box-shadow: 0 10px 20px rgba(255, 143, 61, 0.32);
+        }
+
+        .brand-copy {
+            min-width: 0;
+        }
+
+        .brand-title {
+            font-weight: 800;
+            font-size: 0.98rem;
+        }
+
+        .brand-subtitle {
+            font-size: 0.82rem;
+            color: var(--muted);
+            font-family: "IBM Plex Mono", monospace;
         }
 
         .nav-links {
@@ -117,542 +191,626 @@
             align-items: center;
             gap: 1rem;
             flex-wrap: wrap;
+            justify-content: flex-end;
         }
 
         .nav-links a {
             color: var(--muted);
-            font-size: 0.95rem;
+            font-weight: 600;
         }
 
         .nav-links a:hover {
             color: var(--ink);
         }
 
-        .nav-cta {
-            padding: 0.8rem 1.1rem;
+        .nav-resume {
+            padding: 0.78rem 1rem;
             border-radius: 999px;
             background: var(--ink);
-            color: #fff;
-            font-weight: 600;
+            color: #fff !important;
         }
 
         .hero {
-            padding: 2rem 0 4rem;
+            padding: 1.2rem 0 2rem;
         }
 
         .hero-grid {
             display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            gap: 2rem;
+            grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+            gap: 1.35rem;
             align-items: stretch;
         }
 
-        .hero-copy,
-        .hero-aside,
-        .panel,
-        .project-card,
-        .timeline-card,
-        .contact-card {
-            border-radius: var(--radius-xl);
-        }
-
-        .hero-copy {
-            padding: 2.8rem;
-            position: relative;
+        .hero-main,
+        .hero-side {
+            padding: 1.55rem;
             overflow: hidden;
         }
 
-        .hero-copy::after {
-            content: "";
-            position: absolute;
-            width: 220px;
-            height: 220px;
-            right: -40px;
-            top: -40px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(217, 95, 47, 0.22), transparent 70%);
+        .hero-main {
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 252, 243, 0.92)),
+                linear-gradient(135deg, rgba(255, 212, 77, 0.12), rgba(125, 226, 167, 0.12));
         }
 
-        .eyebrow {
-            display: inline-flex;
+        .hero-topline {
+            display: flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.45rem 0.8rem;
-            border-radius: 999px;
-            background: rgba(15, 118, 110, 0.1);
-            color: var(--accent-2);
-            font-size: 0.9rem;
-            font-weight: 700;
-            margin-bottom: 1.4rem;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
         }
 
-        .hero h1 {
-            font-family: "Instrument Serif", Georgia, serif;
-            font-size: clamp(3.4rem, 7vw, 6.3rem);
+        h1,
+        h2 {
+            font-family: "Fraunces", Georgia, serif;
+            letter-spacing: -0.04em;
             line-height: 0.92;
-            font-weight: 400;
-            letter-spacing: -0.03em;
-            max-width: 10ch;
         }
 
-        .hero h1 span {
-            color: var(--accent);
-            font-style: italic;
+        h1 {
+            font-size: clamp(3rem, 7vw, 6rem);
+            max-width: 11ch;
         }
 
-        .hero-intro {
-            margin-top: 1.3rem;
-            max-width: 58ch;
+        h1 em {
+            font-style: normal;
+            color: var(--orange);
+        }
+
+        .hero-lead {
+            max-width: 63ch;
+            margin-top: 1rem;
             font-size: 1.08rem;
-            line-height: 1.75;
+            line-height: 1.8;
             color: var(--muted);
         }
 
-        .hero-actions,
-        .hero-meta,
-        .highlights,
-        .stats-grid,
-        .projects-grid,
-        .focus-grid,
-        .timeline,
-        .contact-grid,
-        .footer-links {
-            display: grid;
-            gap: 1rem;
-        }
-
         .hero-actions {
-            margin-top: 2rem;
             display: flex;
-            gap: 1rem;
             flex-wrap: wrap;
+            gap: 0.9rem;
+            margin-top: 1.65rem;
         }
 
         .button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.55rem;
             min-height: 52px;
-            padding: 0.9rem 1.3rem;
+            padding: 0.92rem 1.25rem;
             border-radius: 999px;
-            font-weight: 700;
-            transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+            font-weight: 800;
+            transition: transform 180ms ease, box-shadow 180ms ease;
         }
 
         .button:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px) rotate(-1deg);
         }
 
         .button-primary {
-            background: linear-gradient(135deg, var(--accent), #eb7a4d);
+            background: linear-gradient(135deg, var(--orange), #ffb347);
             color: #fff;
-            box-shadow: 0 16px 30px rgba(217, 95, 47, 0.22);
+            box-shadow: 0 14px 28px rgba(255, 143, 61, 0.28);
         }
 
         .button-secondary {
-            background: rgba(24, 33, 29, 0.06);
-            border: 1px solid rgba(24, 33, 29, 0.08);
+            background: rgba(32, 37, 43, 0.06);
+            border: 2px solid rgba(32, 37, 43, 0.08);
         }
 
-        .hero-meta {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            margin-top: 2rem;
-        }
-
-        .meta-item {
-            padding: 1rem;
-            border-radius: var(--radius-md);
-            background: rgba(255, 255, 255, 0.55);
-            border: 1px solid rgba(24, 33, 29, 0.07);
-        }
-
-        .meta-label {
-            font-size: 0.82rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--muted);
-            margin-bottom: 0.45rem;
-        }
-
-        .meta-value {
-            font-size: 1rem;
-            font-weight: 700;
-        }
-
-        .hero-aside {
+        .hero-stats {
             display: grid;
-            gap: 1rem;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.9rem;
+            margin-top: 1.6rem;
         }
 
-        .portrait-card {
-            padding: 1.1rem;
-        }
-
-        .portrait-frame {
-            background: linear-gradient(160deg, rgba(240, 194, 123, 0.45), rgba(15, 118, 110, 0.2));
-            border-radius: calc(var(--radius-xl) - 6px);
+        .stat {
             padding: 1rem;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 2px solid rgba(32, 37, 43, 0.07);
         }
 
-        .portrait-frame img {
-            aspect-ratio: 4 / 5;
-            object-fit: cover;
+        .stat-value {
+            font-family: "Fraunces", Georgia, serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 0.9;
+            margin-bottom: 0.35rem;
+        }
+
+        .stat-label {
+            font-weight: 800;
+            font-size: 0.95rem;
+        }
+
+        .stat-note {
+            margin-top: 0.28rem;
+            font-size: 0.88rem;
+            color: var(--muted);
+            line-height: 1.45;
+        }
+
+        .hero-side {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            gap: 1rem;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 249, 237, 0.95)),
+                linear-gradient(135deg, rgba(120, 183, 255, 0.12), rgba(255, 134, 183, 0.1));
+        }
+
+        .photo-shell {
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 3px solid rgba(32, 37, 43, 0.08);
+            background: linear-gradient(135deg, rgba(120, 183, 255, 0.32), rgba(255, 134, 183, 0.22));
+            padding: 0.8rem;
+        }
+
+        .photo-shell img {
             width: 100%;
-            border-radius: 24px;
+            aspect-ratio: 4 / 4.8;
+            object-fit: cover;
+            border-radius: 20px;
         }
 
-        .aside-copy {
-            padding: 1.5rem;
+        .sticky-note {
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            width: min(180px, 48%);
+            padding: 0.85rem 0.95rem;
+            border-radius: 18px;
+            background: var(--paper-2);
+            border: 2px solid rgba(32, 37, 43, 0.12);
+            box-shadow: 0 14px 24px rgba(32, 37, 43, 0.14);
+            transform: rotate(-5deg);
         }
 
-        .aside-copy h2,
-        .section-heading h2,
-        .contact-card h2 {
-            font-family: "Instrument Serif", Georgia, serif;
-            font-size: clamp(2rem, 4vw, 3.2rem);
-            font-weight: 400;
-            line-height: 0.98;
-            letter-spacing: -0.03em;
+        .sticky-note strong {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.78rem;
+            text-transform: uppercase;
         }
 
-        .aside-copy p,
-        .section-heading p,
-        .timeline-copy,
-        .project-card p,
-        .focus-card p,
-        .contact-card p {
+        .sticky-note span {
+            font-size: 0.92rem;
+            line-height: 1.45;
+            color: var(--ink);
+        }
+
+        .side-card {
+            padding: 1rem 1.05rem;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.68);
+            border: 2px solid rgba(32, 37, 43, 0.08);
+        }
+
+        .side-card h2 {
+            font-size: clamp(1.8rem, 3vw, 2.35rem);
+            margin-bottom: 0.7rem;
+        }
+
+        .side-card p {
             color: var(--muted);
             line-height: 1.7;
         }
 
-        main section {
-            padding: 2rem 0 1rem;
-        }
-
-        .section-heading {
+        .mini-grid {
             display: grid;
-            gap: 0.7rem;
-            margin-bottom: 1.5rem;
-            max-width: 70ch;
-        }
-
-        .stats-grid {
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
-        .panel {
-            padding: 1.45rem;
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, 0.5);
-        }
-
-        .stat-value {
-            font-family: "Instrument Serif", Georgia, serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            color: var(--ink);
-            line-height: 0.95;
-            margin-bottom: 0.45rem;
-        }
-
-        .stat-label {
-            font-weight: 700;
-            margin-bottom: 0.35rem;
-        }
-
-        .stat-note {
-            color: var(--muted);
-            font-size: 0.96rem;
-            line-height: 1.55;
-        }
-
-        .focus-grid {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-
-        .focus-card {
-            padding: 1.5rem;
-        }
-
-        .focus-card h3,
-        .project-card h3,
-        .timeline-title {
-            font-size: 1.2rem;
-            margin-bottom: 0.7rem;
-        }
-
-        .project-card {
-            padding: 1.5rem;
-            border: 1px solid var(--line);
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(255, 250, 242, 0.92));
-            position: relative;
-            overflow: hidden;
-            transition: transform 180ms ease, box-shadow 180ms ease;
-        }
-
-        .project-card:hover,
-        .focus-card:hover,
-        .panel:hover,
-        .timeline-card:hover,
-        .contact-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 48px rgba(24, 33, 29, 0.1);
-        }
-
-        .projects-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.75rem;
         }
 
-        .project-topline {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
+        .mini-card {
+            padding: 0.95rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.72);
+            border: 2px dashed rgba(32, 37, 43, 0.1);
+        }
+
+        .mini-card strong {
+            display: block;
+            margin-bottom: 0.35rem;
+            font-size: 0.84rem;
+            color: var(--muted);
+            font-family: "IBM Plex Mono", monospace;
+            text-transform: uppercase;
+        }
+
+        .mini-card span {
+            font-weight: 800;
+            line-height: 1.35;
+        }
+
+        main section {
+            padding: 1.15rem 0;
+        }
+
+        .section-header {
+            display: grid;
+            gap: 0.75rem;
             margin-bottom: 1rem;
         }
 
-        .project-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.45rem;
-            padding: 0.45rem 0.75rem;
-            border-radius: 999px;
-            font-size: 0.84rem;
-            font-weight: 700;
-            background: rgba(15, 118, 110, 0.1);
-            color: var(--accent-2);
+        .section-header h2 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
         }
 
-        .impact {
-            font-size: 0.92rem;
-            font-weight: 700;
-            color: var(--accent);
-        }
-
-        .tag-list,
-        .detail-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.65rem;
-        }
-
-        .tag {
-            padding: 0.45rem 0.75rem;
-            border-radius: 999px;
-            background: rgba(24, 33, 29, 0.06);
-            border: 1px solid rgba(24, 33, 29, 0.08);
-            font-size: 0.88rem;
-        }
-
-        .detail-list {
-            margin: 1rem 0 1.1rem;
-        }
-
-        .detail {
-            width: 100%;
+        .section-header p {
+            max-width: 70ch;
             color: var(--muted);
-            line-height: 1.65;
-            padding-left: 1.15rem;
-            position: relative;
+            line-height: 1.75;
         }
 
-        .detail::before {
-            content: "";
+        .board {
+            padding: 1.4rem;
+        }
+
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0.9rem;
+        }
+
+        .board-note {
+            padding: 1rem;
+            border-radius: 22px;
+            border: 2px solid rgba(32, 37, 43, 0.08);
+            min-height: 180px;
+        }
+
+        .board-note:nth-child(1) {
+            background: rgba(255, 212, 77, 0.3);
+        }
+
+        .board-note:nth-child(2) {
+            background: rgba(125, 226, 167, 0.28);
+        }
+
+        .board-note:nth-child(3) {
+            background: rgba(120, 183, 255, 0.22);
+        }
+
+        .board-note:nth-child(4) {
+            background: rgba(255, 134, 183, 0.22);
+        }
+
+        .board-note strong {
+            display: block;
+            margin-bottom: 0.65rem;
+            font-family: "IBM Plex Mono", monospace;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            color: rgba(32, 37, 43, 0.7);
+        }
+
+        .board-note h3 {
+            font-size: 1.14rem;
+            margin-bottom: 0.45rem;
+        }
+
+        .board-note p {
+            color: rgba(32, 37, 43, 0.76);
+            line-height: 1.6;
+        }
+
+        .projects-grid,
+        .skills-grid,
+        .timeline {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .projects-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .project {
+            padding: 1.25rem;
+            border-radius: 28px;
+            border: 2px solid rgba(32, 37, 43, 0.08);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 251, 242, 0.96));
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .project:hover,
+        .skill-block:hover,
+        .timeline-item:hover,
+        .contact-card:hover,
+        .board-note:hover,
+        .stat:hover,
+        .side-card:hover,
+        .mini-card:hover {
+            transform: translateY(-4px) rotate(-0.4deg);
+            box-shadow: 0 22px 40px rgba(32, 37, 43, 0.12);
+        }
+
+        .project-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.8rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .project-title {
+            font-size: 1.35rem;
+            margin-bottom: 0.55rem;
+        }
+
+        .project p {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .project-list {
+            margin: 0.95rem 0;
+            display: grid;
+            gap: 0.55rem;
+        }
+
+        .project-list div {
+            position: relative;
+            padding-left: 1rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .project-list div::before {
+            content: "✦";
             position: absolute;
             left: 0;
-            top: 0.72rem;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--accent-3);
+            color: var(--orange);
         }
 
+        .tags,
         .project-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 1.15rem;
+            gap: 0.55rem;
+        }
+
+        .tag {
+            padding: 0.42rem 0.72rem;
+            border-radius: 999px;
+            background: rgba(32, 37, 43, 0.06);
+            border: 2px solid rgba(32, 37, 43, 0.07);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+
+        .project-links {
+            margin-top: 0.95rem;
         }
 
         .project-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 42px;
-            padding: 0.7rem 1rem;
+            padding: 0.72rem 0.95rem;
             border-radius: 999px;
-            background: rgba(15, 118, 110, 0.1);
-            border: 1px solid rgba(15, 118, 110, 0.18);
-            color: var(--accent-2);
-            font-size: 0.92rem;
-            font-weight: 700;
-            transition: transform 180ms ease, background 180ms ease;
+            background: rgba(120, 183, 255, 0.18);
+            border: 2px solid rgba(120, 183, 255, 0.24);
+            font-weight: 800;
         }
 
-        .project-link:hover {
-            transform: translateY(-2px);
-            background: rgba(15, 118, 110, 0.16);
+        .skills-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .skill-block {
+            padding: 1.2rem;
+            border-radius: 26px;
+            background: rgba(255, 255, 255, 0.78);
+            border: 2px solid rgba(32, 37, 43, 0.08);
+        }
+
+        .skill-block h3 {
+            margin-bottom: 0.7rem;
+            font-size: 1.15rem;
+        }
+
+        .skill-block p {
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 0.9rem;
         }
 
         .timeline {
             grid-template-columns: 1fr;
         }
 
-        .timeline-card {
+        .timeline-item {
             display: grid;
-            grid-template-columns: 180px 1fr;
-            gap: 1.25rem;
-            padding: 1.4rem;
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, 0.58);
+            grid-template-columns: 220px 1fr;
+            gap: 1rem;
+            padding: 1.15rem;
+            border-radius: 26px;
+            background: rgba(255, 255, 255, 0.78);
+            border: 2px solid rgba(32, 37, 43, 0.08);
         }
 
         .timeline-date {
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: var(--accent-2);
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-
-        .timeline-company {
-            margin-top: 0.3rem;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.85rem;
             color: var(--muted);
-            font-weight: 700;
+            margin-bottom: 0.4rem;
         }
 
-        .timeline-copy {
+        .timeline-side strong {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .timeline-side span {
+            color: var(--muted);
+        }
+
+        .timeline-main h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.55rem;
+        }
+
+        .timeline-main p,
+        .timeline-main ul li,
+        .contact-card p {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .timeline-main ul {
+            list-style: none;
+            display: grid;
+            gap: 0.45rem;
             margin-top: 0.6rem;
         }
 
+        .timeline-main li {
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .timeline-main li::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: var(--orange);
+            font-family: "IBM Plex Mono", monospace;
+            font-weight: 700;
+        }
+
         .contact-grid {
-            grid-template-columns: 1.1fr 0.9fr;
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+            gap: 1rem;
         }
 
         .contact-card {
             min-width: 0;
-            padding: 1.8rem;
-            border: 1px solid var(--line);
-            background: rgba(255, 250, 242, 0.78);
+            padding: 1.35rem;
+        }
+
+        .contact-card h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
         }
 
         .contact-links {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 0.9rem;
-            margin-top: 1.3rem;
+            gap: 0.8rem;
+            margin-top: 1rem;
         }
 
         .contact-link {
             min-width: 0;
-            padding: 1rem 1.1rem;
-            border-radius: var(--radius-md);
-            background: rgba(24, 33, 29, 0.05);
-            border: 1px solid rgba(24, 33, 29, 0.08);
-            transition: background 180ms ease, transform 180ms ease;
-        }
-
-        .contact-link:hover {
-            background: rgba(24, 33, 29, 0.08);
-            transform: translateY(-2px);
+            padding: 1rem;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.72);
+            border: 2px solid rgba(32, 37, 43, 0.08);
         }
 
         .contact-label {
             display: block;
-            font-size: 0.82rem;
+            margin-bottom: 0.3rem;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.78rem;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
             color: var(--muted);
-            margin-bottom: 0.35rem;
         }
 
         .contact-value {
             display: block;
-            font-weight: 700;
+            font-size: 1.02rem;
+            font-weight: 800;
             line-height: 1.35;
             overflow-wrap: anywhere;
-            word-break: break-word;
         }
 
         .footer {
-            padding: 2.5rem 0 4rem;
+            padding: 1rem 0 3rem;
         }
 
-        .footer-links {
-            grid-template-columns: repeat(3, minmax(0, max-content));
+        .footer-card {
+            display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 1.2rem;
+            border-radius: 999px;
+            background: rgba(255, 253, 247, 0.82);
+            border: 2px solid rgba(32, 37, 43, 0.08);
+        }
+
+        .footer-card span {
             color: var(--muted);
         }
 
         .reveal {
             opacity: 0;
-            transform: translateY(18px);
-            transition: opacity 550ms ease, transform 550ms ease;
+            transform: translateY(18px) rotate(0.5deg);
+            transition: opacity 520ms ease, transform 520ms ease;
         }
 
         .reveal.is-visible {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(0) rotate(0deg);
         }
 
-        @media (max-width: 980px) {
+        @media (max-width: 1100px) {
             .hero-grid,
-            .contact-grid,
             .projects-grid,
-            .focus-grid,
-            .stats-grid {
+            .skills-grid,
+            .contact-grid,
+            .board-grid {
                 grid-template-columns: 1fr;
             }
 
-            .hero-copy,
-            .aside-copy,
-            .contact-card {
-                padding: 1.5rem;
-            }
-
-            .timeline-card {
+            .timeline-item {
                 grid-template-columns: 1fr;
-            }
-
-            .footer-links {
-                grid-template-columns: 1fr;
-                justify-content: start;
-                gap: 0.6rem;
             }
         }
 
-        @media (max-width: 720px) {
-            .site-nav {
-                padding-top: 0.75rem;
-            }
-
-            .nav-inner {
+        @media (max-width: 760px) {
+            .nav-shell,
+            .footer-card {
                 border-radius: 28px;
-                padding: 1rem;
                 align-items: flex-start;
                 flex-direction: column;
             }
 
-            .nav-links {
-                gap: 0.85rem;
-            }
-
-            .hero {
-                padding-top: 1rem;
-            }
-
+            .nav-links,
             .hero-actions,
+            .contact-actions {
+                width: 100%;
+            }
+
+            .hero-stats,
+            .mini-grid,
             .contact-links {
                 grid-template-columns: 1fr;
             }
 
-            .hero-actions {
-                display: grid;
+            .hero-main,
+            .hero-side,
+            .board,
+            .contact-card {
+                padding: 1rem;
             }
 
-            .hero-meta {
-                grid-template-columns: 1fr;
+            .sticky-note {
+                width: 56%;
             }
         }
     </style>
@@ -660,14 +818,20 @@
 <body>
     <nav class="site-nav">
         <div class="container">
-            <div class="nav-inner glass">
-                <a class="brand" href="#top">Srujan Gowda S J</a>
+            <div class="nav-shell">
+                <a class="brand" href="#top">
+                    <span class="brand-badge">SG</span>
+                    <span class="brand-copy">
+                        <span class="brand-title">Srujan Gowda S J</span>
+                        <span class="brand-subtitle">software engineer / builder / occasional design gremlin</span>
+                    </span>
+                </a>
                 <div class="nav-links">
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
                     <a href="#experience">Experience</a>
                     <a href="#contact">Contact</a>
-                    <a class="nav-cta" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener noreferrer">Latest Resume</a>
                 </div>
             </div>
         </div>
@@ -676,50 +840,77 @@
     <header class="hero" id="top">
         <div class="container">
             <div class="hero-grid">
-                <div class="hero-copy glass reveal">
-                    <div class="eyebrow">Software Engineer • AI/ML Builder • USC M.S. CS</div>
-                    <h1>Designing calm, <span>capable</span> software for people and systems.</h1>
-                    <p class="hero-intro">
-                        I’m Srujan Gowda S J, a software engineer with experience across backend platforms,
-                        intelligent applications, and data-heavy systems. I enjoy building products that feel
-                        simple on the surface while doing serious work underneath, from event-driven services to
-                        retrieval-powered assistants and ML pipelines.
+                <article class="hero-main card reveal">
+                    <span class="scribble" style="top: 1.15rem; right: 1.25rem;">now with extra agentic energy</span>
+                    <div class="hero-topline">
+                        <span class="chip">Available for full-time software engineering roles</span>
+                        <span class="mini-chip">Los Angeles, CA</span>
+                    </div>
+                    <h1>I build <em>serious software</em> with a slightly unserious sense of style.</h1>
+                    <p class="hero-lead">
+                        I’m Srujan Gowda Sathiganahally Jagadeesha, a software engineer currently pursuing my
+                        M.S. in Computer Science at USC. My favorite corner of the world is where AI agents,
+                        backend systems, and product thinking all collide and somehow become useful. I like
+                        building things that save real hours, reduce friction, and still feel human.
                     </p>
                     <div class="hero-actions">
-                        <a class="button button-primary" href="#projects">See Selected Work</a>
+                        <a class="button button-primary" href="#projects">Tour The Build Board</a>
                         <a class="button button-secondary" href="mailto:sathigan@usc.edu">Email Me</a>
+                        <a class="button button-secondary" href="resume.pdf" target="_blank" rel="noopener noreferrer">Open Resume</a>
                     </div>
-                    <div class="hero-meta">
-                        <div class="meta-item">
-                            <div class="meta-label">Currently</div>
-                            <div class="meta-value">M.S. Computer Science at USC</div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-value">800+</div>
+                            <div class="stat-label">hours saved</div>
+                            <div class="stat-note">through Straight-Through Processing at Fidelity.</div>
                         </div>
-                        <div class="meta-item">
-                            <div class="meta-label">Previously</div>
-                            <div class="meta-value">Software Engineer at Fidelity</div>
+                        <div class="stat">
+                            <div class="stat-value">4h → 30m</div>
+                            <div class="stat-label">migration goal</div>
+                            <div class="stat-note">for AI-assisted automated test rewrites at WebMD.</div>
                         </div>
-                        <div class="meta-item">
-                            <div class="meta-label">Focus</div>
-                            <div class="meta-value">AI products, backend systems, data workflows</div>
+                        <div class="stat">
+                            <div class="stat-value">#1</div>
+                            <div class="stat-label">undergrad rank</div>
+                            <div class="stat-note">plus Gold Medalist and a 9.90/10 GPA.</div>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="hero-aside">
-                    <div class="portrait-card glass reveal">
-                        <div class="portrait-frame">
-                            <img src="profile-photo.jpg" alt="Portrait of Srujan Gowda S J">
+                <aside class="hero-side card reveal">
+                    <div class="photo-shell">
+                        <img src="profile-photo.jpg" alt="Portrait of Srujan Gowda Sathiganahally Jagadeesha">
+                        <div class="sticky-note">
+                            <strong>Current Build</strong>
+                            <span>AI tooling for test migration, healing, validation, and lower LLM cost.</span>
                         </div>
                     </div>
-                    <div class="aside-copy glass reveal">
-                        <h2>What I optimize for</h2>
+                    <div class="side-card">
+                        <h2>My sweet spot</h2>
                         <p>
-                            Reliable systems, thoughtful UX, and measurable outcomes. I like work that connects
-                            infrastructure discipline with product intuition, especially when AI or data can make
-                            the experience more useful rather than more complicated.
+                            Agentic systems with guardrails, backend engineering that actually survives production,
+                            and product flows that make smart software feel less robotic and more helpful.
                         </p>
                     </div>
-                </div>
+                    <div class="mini-grid">
+                        <div class="mini-card">
+                            <strong>Currently</strong>
+                            <span>AI Analyst Intern at WebMD / Internet Brands</span>
+                        </div>
+                        <div class="mini-card">
+                            <strong>Previously</strong>
+                            <span>Software Engineer at Fidelity Investments</span>
+                        </div>
+                        <div class="mini-card">
+                            <strong>Toolkit</strong>
+                            <span>Python, Java, TypeScript, React, Spring Boot, Supabase</span>
+                        </div>
+                        <div class="mini-card">
+                            <strong>Vibe</strong>
+                            <span>Practical engineer, curious builder, respectful chaos in the UI</span>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </header>
@@ -727,181 +918,125 @@
     <main>
         <section id="about">
             <div class="container">
-                <div class="section-heading reveal">
-                    <div class="eyebrow">Snapshot</div>
-                    <h2>A portfolio built around signal, not filler.</h2>
+                <div class="section-header reveal">
+                    <span class="chip">About Me</span>
+                    <h2>My portfolio, but make it look like a well-organized desk that may or may not have stickers.</h2>
                     <p>
-                        The through-line in my work is turning messy inputs into dependable outputs: streaming
-                        events into operational insight, unstructured text into usable knowledge, and research
-                        experiments into practical products.
+                        The thread across my resume is simple: I like turning messy processes into dependable systems.
+                        That has meant automating financial workflows, building AI-powered tooling for software teams,
+                        and shipping user-facing products that need both technical depth and product empathy.
                     </p>
                 </div>
-
-                <div class="stats-grid">
-                    <article class="panel reveal">
-                        <div class="stat-value">2+</div>
-                        <div class="stat-label">Years in industry</div>
-                        <p class="stat-note">Hands-on software engineering experience shipping backend and platform work.</p>
-                    </article>
-                    <article class="panel reveal">
-                        <div class="stat-value">10+</div>
-                        <div class="stat-label">Major projects</div>
-                        <p class="stat-note">Across AI/ML, backend systems, visualization, and product engineering.</p>
-                    </article>
-                    <article class="panel reveal">
-                        <div class="stat-value">#1</div>
-                        <div class="stat-label">Undergraduate rank</div>
-                        <p class="stat-note">Graduated as Rank 1 and Gold Medalist in Computer Science.</p>
-                    </article>
-                    <article class="panel reveal">
-                        <div class="stat-value">10K+</div>
-                        <div class="stat-label">Daily events</div>
-                        <p class="stat-note">Event-driven systems built to process production-scale operational traffic.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="section-heading reveal">
-                    <div class="eyebrow">Strengths</div>
-                    <h2>I work best where systems thinking meets applied AI.</h2>
-                </div>
-                <div class="focus-grid">
-                    <article class="focus-card panel reveal">
-                        <h3>Backend Engineering</h3>
-                        <p>
-                            Java, Spring Boot, Node.js, and API-driven systems with an emphasis on reliability,
-                            observability, and maintainable architecture.
-                        </p>
-                    </article>
-                    <article class="focus-card panel reveal">
-                        <h3>AI/ML Applications</h3>
-                        <p>
-                            NLP pipelines, RAG systems, vector search, classical ML, and evaluation-focused
-                            experimentation for products that need to perform outside demos.
-                        </p>
-                    </article>
-                    <article class="focus-card panel reveal">
-                        <h3>Data & Platform Work</h3>
-                        <p>
-                            Event processing, reporting automation, cloud workflows, and dashboards that turn
-                            operational complexity into something teams can actually use.
-                        </p>
-                    </article>
+                <div class="board card board reveal">
+                    <div class="board-grid">
+                        <article class="board-note">
+                            <strong>Education mode</strong>
+                            <h3>USC, M.S. in Computer Science</h3>
+                            <p>Coursework includes Algorithms, NLP, Machine Learning, and Deep Learning.</p>
+                        </article>
+                        <article class="board-note">
+                            <strong>Industry mode</strong>
+                            <h3>From enterprise systems to AI agents</h3>
+                            <p>I’ve worked across financial systems, test automation, agent pipelines, and product builds.</p>
+                        </article>
+                        <article class="board-note">
+                            <strong>Builder mode</strong>
+                            <h3>I care about implementation details</h3>
+                            <p>Cost, latency, approval gates, security boundaries, migration effort, and long-term maintainability all matter.</p>
+                        </article>
+                        <article class="board-note">
+                            <strong>Fun mode</strong>
+                            <h3>I refuse to make portfolios boring</h3>
+                            <p>If the software is smart, the site can smile a little too. That feels fair.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="projects">
             <div class="container">
-                <div class="section-heading reveal">
-                    <div class="eyebrow">Selected Work</div>
-                    <h2>Projects that balance experimentation with execution.</h2>
+                <div class="section-header reveal">
+                    <span class="chip">Selected Projects</span>
+                    <h2>Three projects that show how I think, not just what I can list.</h2>
                     <p>
-                        A mix of product-facing engineering and research-driven builds. I’ve highlighted work
-                        where the implementation details and the outcomes are both meaningful.
+                        These aren’t filler cards. Each one maps to a different strength: product engineering,
+                        AI system design, and applied machine learning with evaluation discipline.
                     </p>
                 </div>
-
                 <div class="projects-grid">
-                    <article class="project-card reveal">
-                        <div class="project-topline">
-                            <span class="project-badge">Developer Tooling</span>
-                            <span class="impact">Code translation workflow</span>
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="mini-chip">Product + Mobile</span>
+                            <span class="mini-chip">End-to-end app build</span>
                         </div>
-                        <h3>pyToJava</h3>
+                        <h3 class="project-title">Flexd</h3>
                         <p>
-                            A source-to-source code conversion project focused on translating Python-style logic
-                            into structured Java code with cleaner type-aware organization.
+                            A social fitness app I designed and built across workout tracking, messaging,
+                            trainer-client workflows, subscriptions, analytics, and community features.
                         </p>
-                        <div class="detail-list">
-                            <div class="detail">Designed a pipeline to map common Python constructs into Java classes, methods, and syntax patterns.</div>
-                            <div class="detail">Focused on reducing manual rewrite effort for repetitive backend and algorithmic code conversion tasks.</div>
-                            <div class="detail">Explored parsing, rule-based transformation, and output structuring to make translated code easier to refine.</div>
+                        <div class="project-list">
+                            <div>Built a rich workout system with set-level logging, remembered weights, charts, benchmarks, and templates.</div>
+                            <div>Added ranked feed discovery, media posts, private accounts, direct chat, read receipts, and typing indicators.</div>
+                            <div>Implemented trainer scheduling, client management, reports, workout assignments, and protected payment-oriented flows.</div>
                         </div>
-                        <div class="tag-list">
-                            <span class="tag">Python</span>
-                            <span class="tag">Java</span>
-                            <span class="tag">Parsing</span>
-                            <span class="tag">Code Generation</span>
-                            <span class="tag">Developer Tools</span>
+                        <div class="tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Expo</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">Next.js</span>
                         </div>
                     </article>
 
-                    <article class="project-card reveal">
-                        <div class="project-topline">
-                            <span class="project-badge">RAG Assistant</span>
-                            <span class="impact">50+ concurrent users</span>
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="mini-chip">AI + Mental Health</span>
+                            <span class="mini-chip">Live demo</span>
                         </div>
-                        <h3>Anupama</h3>
+                        <h3 class="project-title">Anupama</h3>
                         <p>
-                            A mental health support chatbot designed around retrieval-augmented conversations and
-                            real-time interactions.
+                            A CBT-focused mental health assistant built around persistence, structured follow-up,
+                            safer conversations, and long-term user engagement instead of one-off chat responses.
                         </p>
-                        <div class="detail-list">
-                            <div class="detail">Built with GPT-powered responses, ChromaDB retrieval, and WebSocket messaging.</div>
-                            <div class="detail">Focused on low-latency interaction patterns for conversational continuity.</div>
-                            <div class="detail">Created a system architecture that could support simultaneous active sessions.</div>
+                        <div class="project-list">
+                            <div>Created persistent user profiles, cross-session memory, safety escalation workflows, and personalized exercises.</div>
+                            <div>Designed a hybrid backend mixing custom mood, distortion, and safety classifiers with LLM-generated responses.</div>
+                            <div>Added secure authentication, homework storage, calendar scheduling, and behavioral regression checks.</div>
                         </div>
-                        <div class="tag-list">
+                        <div class="tags">
                             <span class="tag">Python</span>
-                            <span class="tag">RAG</span>
-                            <span class="tag">ChromaDB</span>
+                            <span class="tag">FastAPI</span>
                             <span class="tag">React</span>
-                            <span class="tag">WebSockets</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">LLMs</span>
                         </div>
                         <div class="project-links">
-                            <a class="project-link" href="https://anupama-omega.vercel.app/" target="_blank" rel="noopener noreferrer">View live app</a>
+                            <a class="project-link" href="https://anupama-omega.vercel.app/" target="_blank" rel="noopener noreferrer">View Live Demo</a>
                         </div>
                     </article>
 
-                    <article class="project-card reveal">
-                        <div class="project-topline">
-                            <span class="project-badge">Behavioral ML</span>
-                            <span class="impact">92% accuracy</span>
+                    <article class="project reveal">
+                        <div class="project-top">
+                            <span class="mini-chip">Applied ML</span>
+                            <span class="mini-chip">Signal → insight</span>
                         </div>
-                        <h3>Ruff Behavioral Classification</h3>
+                        <h3 class="project-title">Quantifying Mating Behavior From Accelerometry</h3>
                         <p>
-                            A time-series classification project using tri-axial accelerometer data to identify
-                            fine-grained avian behavior patterns.
+                            An end-to-end time-series classification pipeline for transforming high-frequency
+                            accelerometer signals into interpretable behavioral predictions.
                         </p>
-                        <div class="detail-list">
-                            <div class="detail">Classified 13 behaviors using Random Forest, SVM, and dimensionality reduction.</div>
-                            <div class="detail">Designed sliding-window feature extraction with mean, variance, and spectral features.</div>
-                            <div class="detail">Improved inference efficiency with PCA without sacrificing predictive quality.</div>
+                        <div class="project-list">
+                            <div>Handled signal cleaning, fixed-window segmentation, feature engineering, model training, and evaluation.</div>
+                            <div>Extracted interpretable statistical and motion-based features to create model-ready datasets.</div>
+                            <div>Performed class-level error analysis and built visual summaries to guide iteration and refinement.</div>
                         </div>
-                        <div class="tag-list">
+                        <div class="tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">scikit-learn</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Matplotlib</span>
                             <span class="tag">Time Series</span>
-                            <span class="tag">PCA</span>
-                            <span class="tag">Classification</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <div class="project-topline">
-                            <span class="project-badge">Frontend + Data</span>
-                            <span class="impact">Interactive storytelling</span>
-                        </div>
-                        <h3>DataViz Studio</h3>
-                        <p>
-                            A responsive visualization project focused on presenting complex datasets in a more
-                            approachable and exploratory format.
-                        </p>
-                        <div class="detail-list">
-                            <div class="detail">Built reusable charting views with React and modern responsive patterns.</div>
-                            <div class="detail">Explored interactive filtering and narrative presentation for better readability.</div>
-                            <div class="detail">Designed for polished web delivery rather than static analytics output alone.</div>
-                        </div>
-                        <div class="tag-list">
-                            <span class="tag">React</span>
-                            <span class="tag">D3.js</span>
-                            <span class="tag">Recharts</span>
-                            <span class="tag">Tailwind CSS</span>
-                            <span class="tag">UI Engineering</span>
                         </div>
                     </article>
                 </div>
@@ -910,67 +1045,148 @@
 
         <section id="experience">
             <div class="container">
-                <div class="section-heading reveal">
-                    <div class="eyebrow">Experience</div>
-                    <h2>Professional work shaped by scale, product ownership, and learning velocity.</h2>
+                <div class="section-header reveal">
+                    <span class="chip">Experience</span>
+                    <h2>Career timeline, but with better posture and less corporate wallpaper.</h2>
+                    <p>
+                        The recent story is a move from enterprise backend engineering into AI product and tooling work,
+                        without losing the systems discipline that makes the flashy parts trustworthy.
+                    </p>
                 </div>
-
                 <div class="timeline">
-                    <article class="timeline-card reveal">
-                        <div>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-side">
+                            <div class="timeline-date">May 2026 - Present</div>
+                            <strong>WebMD / Internet Brands</strong>
+                            <span>Los Angeles, CA</span>
+                        </div>
+                        <div class="timeline-main">
+                            <h3>AI Analyst Intern</h3>
+                            <p>
+                                Building AI-assisted developer tooling for software test migration with human approval
+                                gates, enterprise security constraints, and measurable cost and latency tracking.
+                            </p>
+                            <ul>
+                                <li>Developing a VS Code extension in TypeScript with the Claude Agent SDK to convert Selenium and Robot Framework tests into pytest and Playwright.</li>
+                                <li>Creating multi-stage workflows for migration, analysis, healing, and validation with supervised execution.</li>
+                                <li>Using stage-specific context scoping and model routing to reduce token usage, latency, and cost.</li>
+                                <li>Improving security and output quality with least-privilege tool access and REST-based verification against source specifications.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-side">
+                            <div class="timeline-date">Feb 2023 - Jul 2025</div>
+                            <strong>Fidelity Investments</strong>
+                            <span>Bengaluru, India</span>
+                        </div>
+                        <div class="timeline-main">
+                            <h3>Software Engineer</h3>
+                            <p>
+                                Worked on high-impact backend and workflow systems for financial operations, with a focus
+                                on automation, reliability, traceability, and faster delivery across teams.
+                            </p>
+                            <ul>
+                                <li>Designed event-driven Straight-Through Processing with Spring Boot and AWS EventBridge, saving 800+ analyst hours annually.</li>
+                                <li>Built Canadian tax-filing workflows for T3 Slips and T3 Summaries using Spring Batch, REST APIs, and Oracle SQL.</li>
+                                <li>Reduced data-delivery latency by 40% by moving file integrations from on-prem SFTP to AWS S3.</li>
+                                <li>Built a Java automation framework with Cucumber and Selenium that pushed regression coverage to 75% and cut execution time from one week to six hours.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-side">
                             <div class="timeline-date">Aug 2025 - May 2027</div>
-                            <div class="timeline-company">University of Southern California</div>
+                            <strong>University of Southern California</strong>
+                            <span>Los Angeles, CA</span>
                         </div>
-                        <div>
-                            <h3 class="timeline-title">M.S. in Computer Science</h3>
-                            <p class="timeline-copy">
-                                Deepening my work in AI/ML, distributed systems, and advanced computer science
-                                fundamentals while building graduate-level projects with a practical engineering lens.
+                        <div class="timeline-main">
+                            <h3>M.S. in Computer Science</h3>
+                            <p>
+                                Building depth in algorithms, NLP, machine learning, and deep learning while using the
+                                degree as a launchpad for more ambitious applied AI systems.
                             </p>
                         </div>
                     </article>
 
-                    <article class="timeline-card reveal">
-                        <div>
-                            <div class="timeline-date">Jul 2023 - Jul 2025</div>
-                            <div class="timeline-company">Fidelity Investments</div>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-side">
+                            <div class="timeline-date">Aug 2019 - May 2023</div>
+                            <strong>The National Institute of Engineering</strong>
+                            <span>Mysuru, India</span>
                         </div>
-                        <div>
-                            <h3 class="timeline-title">Software Engineer</h3>
-                            <p class="timeline-copy">
-                                Built event-driven microservices processing 10K+ daily events, automated reporting
-                                workflows that significantly reduced manual effort, and contributed to cloud-focused
-                                engineering across AWS and Kubernetes environments.
+                        <div class="timeline-main">
+                            <h3>B.E. in Computer Science</h3>
+                            <p>
+                                Graduated Rank 1 with a Gold Medal and a 9.90/10 GPA, which sounds very serious and,
+                                to be fair, was a lot of serious work.
                             </p>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
 
-                    <article class="timeline-card reveal">
-                        <div>
-                            <div class="timeline-date">Jan 2023 - Jun 2023</div>
-                            <div class="timeline-company">Fidelity Investments</div>
-                        </div>
-                        <div>
-                            <h3 class="timeline-title">Software Engineer Intern</h3>
-                            <p class="timeline-copy">
-                                Worked on Spring Boot services, Kafka-backed integrations, Angular dashboards, and
-                                CI/CD improvements with Jenkins, which gave me a strong production engineering base
-                                early in my career.
-                            </p>
+        <section id="skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="chip">Skills Stack</span>
+                    <h2>The toolbox I actually reach for.</h2>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-block reveal">
+                        <h3>Languages</h3>
+                        <p>Python, Java, TypeScript, JavaScript, and SQL across backend, product, and AI-heavy builds.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
                         </div>
                     </article>
 
-                    <article class="timeline-card reveal">
-                        <div>
-                            <div class="timeline-date">2019 - 2023</div>
-                            <div class="timeline-company">The National Institute of Engineering</div>
+                    <article class="skill-block reveal">
+                        <h3>AI And Agentic Systems</h3>
+                        <p>LLM application work with orchestration, evaluation, retrieval, and cost-conscious workflow design.</p>
+                        <div class="tags">
+                            <span class="tag">Claude Agent SDK</span>
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">Prompt Engineering</span>
+                            <span class="tag">LLM Evaluation</span>
                         </div>
-                        <div>
-                            <h3 class="timeline-title">B.E. in Computer Science</h3>
-                            <p class="timeline-copy">
-                                Graduated Rank 1 and Gold Medalist, building a strong foundation in algorithms,
-                                software engineering, machine learning, and systems problem-solving.
-                            </p>
+                    </article>
+
+                    <article class="skill-block reveal">
+                        <h3>Application Development</h3>
+                        <p>From mobile apps and web frontends to APIs, auth, data systems, and backend services.</p>
+                        <div class="tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Expo</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-block reveal">
+                        <h3>Cloud, DevOps, And Testing</h3>
+                        <p>Infrastructure-aware engineering with testing depth and enough battle scars to care about reliability.</p>
+                        <div class="tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">Playwright</span>
+                            <span class="tag">pytest</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">Cucumber</span>
                         </div>
                     </article>
                 </div>
@@ -980,25 +1196,31 @@
         <section id="contact">
             <div class="container">
                 <div class="contact-grid">
-                    <article class="contact-card reveal">
-                        <div class="eyebrow">Open To Opportunities</div>
-                        <h2>Let’s build something useful.</h2>
+                    <article class="contact-card card reveal">
+                        <span class="chip">Open To Full-Time Roles</span>
+                        <h2>If you need an engineer who can ship AI things without hand-waving the engineering, we should talk.</h2>
                         <p>
-                            I’m interested in internships and full-time roles where I can contribute across
-                            software engineering, AI applications, and product-minded backend work.
+                            I’m especially interested in software engineering roles involving AI products,
+                            developer tooling, backend systems, platform work, or teams that want someone
+                            who enjoys both architecture and execution.
                         </p>
-                        <div class="hero-actions">
-                            <a class="button button-primary" href="mailto:sathigan@usc.edu">Start a Conversation</a>
+                        <div class="contact-actions">
+                            <a class="button button-primary" href="mailto:sathigan@usc.edu">Say Hello</a>
                             <a class="button button-secondary" href="resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
                         </div>
                     </article>
 
-                    <article class="contact-card reveal">
+                    <article class="contact-card card reveal">
                         <h2>Reach me here</h2>
+                        <p>Classic contact card section, except now it behaves and also looks like it brought snacks.</p>
                         <div class="contact-links">
                             <a class="contact-link" href="mailto:sathigan@usc.edu">
                                 <span class="contact-label">Email</span>
                                 <span class="contact-value">sathigan@usc.edu</span>
+                            </a>
+                            <a class="contact-link" href="tel:+12132006451">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">(213) 200-6451</span>
                             </a>
                             <a class="contact-link" href="https://linkedin.com/in/srujangowda14" target="_blank" rel="noopener noreferrer">
                                 <span class="contact-label">LinkedIn</span>
@@ -1007,10 +1229,6 @@
                             <a class="contact-link" href="https://github.com/srujangowda14" target="_blank" rel="noopener noreferrer">
                                 <span class="contact-label">GitHub</span>
                                 <span class="contact-value">github.com/srujangowda14</span>
-                            </a>
-                            <a class="contact-link" href="#top">
-                                <span class="contact-label">Location</span>
-                                <span class="contact-value">Los Angeles, CA</span>
                             </a>
                         </div>
                     </article>
@@ -1021,9 +1239,9 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-links">
-                <span>Srujan Gowda S J</span>
-                <span>Software Engineer with a focus on AI, backend systems, and thoughtful product execution.</span>
+            <div class="footer-card">
+                <span>Srujan Gowda Sathiganahally Jagadeesha</span>
+                <span>Built with fresh resume content, one HTML file, and permission to be a little goofy.</span>
                 <a href="#top">Back to top</a>
             </div>
         </div>
@@ -1039,7 +1257,7 @@
                     }
                 });
             },
-            { threshold: 0.16 }
+            { threshold: 0.14 }
         );
 
         document.querySelectorAll(".reveal").forEach((element) => {
